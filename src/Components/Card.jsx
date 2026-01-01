@@ -22,9 +22,9 @@
 
 import React from "react";
 
-const Card = ({ imgsrc, name, off1, off2, btname }) => {
+const Card = ({ imgsrc, name, off1, off2, btname,price }) => {
   return (
-    <div className="bg-[#2e7d32] w-53 h-74 flex flex-col items-center p-4">
+    <div className="bg-[#2e7d32] w-53 h-80 flex flex-col items-center p-4">
       
       {/* Image */}
       <div className="bg-white p-3 mb-3">
@@ -43,9 +43,9 @@ const Card = ({ imgsrc, name, off1, off2, btname }) => {
       <p className="text-white text-2xl font-bold leading-tight">
         {off1}-{off2}% OFF
       </p>
-
+      <p className="text-white text-xl opacity-90">{price}</p>
       <p className="text-white text-xs opacity-90">
-        {btname}
+        shop now
       </p>
     </div>
   );
